@@ -60,13 +60,18 @@ export const Hero: React.FC<HeroProps> = ({
   };
 
   return (
-    <section className="relative pt-20 pb-8 overflow-hidden bg-[#050B17]">
-      {/* Cinematic Bedroom Ambient Lighting Atmosphere */}
+    <section className="relative pt-20 pb-8 overflow-hidden bg-transparent">
+      {/* Neon Blue Wave-Tech Ambient Lighting Atmosphere matching reference */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="absolute top-[12%] right-[10%] w-[680px] h-[680px] rounded-full bg-cyan-500/12 blur-[130px]" />
+        <img
+          src="/assets/aistudio/Neon_Blue_Wave-Tech_Background_a2923561.png"
+          alt=""
+          className="w-full h-full object-cover object-top opacity-95 pointer-events-none select-none"
+        />
+        {/* Soft edge ambient illumination */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#020611]/20 via-transparent to-[#020611]/70" />
+        <div className="absolute top-[12%] right-[10%] w-[680px] h-[680px] rounded-full bg-cyan-400/12 blur-[130px]" />
         <div className="absolute top-[28%] right-[28%] w-[420px] h-[420px] rounded-full bg-blue-600/15 blur-[110px]" />
-        <div className="absolute top-[52%] right-[36%] w-[190px] h-[190px] rounded-full bg-amber-400/10 blur-[65px]" />
-        <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-[#050B17] to-transparent" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -172,36 +177,11 @@ export const Hero: React.FC<HeroProps> = ({
 
           {/* Right Column: 3D Ceiling Fan with 4 Floating Info Panels */}
           <div className="lg:col-span-7 relative min-h-[460px] sm:min-h-[500px] flex items-center justify-center">
-            {/* Architectural Night Bedroom Backdrop Card */}
-            <div className="absolute inset-0 rounded-3xl overflow-hidden border border-cyan-500/20 bg-gradient-to-b from-[#0a162b]/80 via-[#071120]/85 to-[#050B17] shadow-[inset_0_0_80px_rgba(0,180,255,0.06)]">
-              <div className="absolute bottom-4 left-10 w-72 h-20 bg-slate-900/50 rounded-t-2xl border-t border-cyan-500/10" />
-              <div className="absolute bottom-16 right-16 w-12 h-20 bg-amber-500/15 rounded-full blur-xl" />
-            </div>
-
-            {/* Quick Fan Connection Pill Overlay */}
-            <div className="absolute top-3 left-1/2 -translate-x-1/2 z-30">
-              {isConnected ? (
-                <div className="px-3 py-1 rounded-full bg-emerald-950/85 border border-emerald-400/50 text-emerald-300 text-[10px] font-semibold flex items-center gap-1.5 backdrop-blur-md shadow-[0_0_15px_rgba(16,185,129,0.3)]">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  <span>Fan Connected: Telemetry Active</span>
-                  <button
-                    onClick={handleToggleConnection}
-                    className="ml-1 text-[10px] underline text-emerald-200 hover:text-white cursor-pointer"
-                  >
-                    Disconnect
-                  </button>
-                </div>
-              ) : (
-                <button
-                  type="button"
-                  onClick={handleToggleConnection}
-                  disabled={isConnecting}
-                  className="px-3 py-1 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-amber-400/50 hover:border-amber-400 text-amber-300 text-[10px] font-bold flex items-center gap-1.5 backdrop-blur-md shadow-[0_0_15px_rgba(245,158,11,0.2)] transition-all cursor-pointer hover:scale-105"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-                  <span>{isConnecting ? connectStep : 'No Fan Connected — Click to Connect'}</span>
-                </button>
-              )}
+            {/* Sleek Neon Wave Tech Backdrop Card matching reference */}
+            <div className="absolute inset-0 rounded-3xl overflow-hidden border border-cyan-400/25 bg-[#061226]/50 backdrop-blur-md shadow-[0_0_50px_rgba(0,140,255,0.18),inset_0_0_80px_rgba(0,210,255,0.06)]">
+              {/* Dynamic cyan-blue wave accent blooms echoing the reference curves */}
+              <div className="absolute -top-10 -left-10 w-64 h-64 bg-cyan-400/15 rounded-full blur-[80px]" />
+              <div className="absolute -bottom-10 -right-10 w-72 h-72 bg-blue-600/25 rounded-full blur-[90px]" />
             </div>
 
             {/* 3D Animated Ceiling Fan */}

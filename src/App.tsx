@@ -93,12 +93,23 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050B17] text-white flex flex-col font-['Plus_Jakarta_Sans',sans-serif] selection:bg-cyan-500/30 selection:text-cyan-200">
+    <div className="min-h-screen bg-[#020611] text-white flex flex-col font-['Plus_Jakarta_Sans',sans-serif] selection:bg-cyan-500/30 selection:text-cyan-200 relative">
+      {/* Global Neon Blue Wave-Tech Background Layer matching reference image */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <img
+          src="/assets/aistudio/Neon_Blue_Wave-Tech_Background_a2923561.png"
+          alt=""
+          className="w-full h-full object-cover object-center opacity-85 select-none"
+        />
+        {/* Soft edge ambient illumination */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#020611]/30 via-transparent to-[#020611]/70 pointer-events-none" />
+      </div>
+
       {/* Top Fixed Navigation */}
       <Navbar activeTab={activeTab} onNavigate={handleNavigate} />
 
       {/* Main Page Content */}
-      <main className="flex-1">
+      <main className="flex-1 relative z-10">
         {activeTab === 'home' && (
           <Home
             comfortInputs={comfortInputs}

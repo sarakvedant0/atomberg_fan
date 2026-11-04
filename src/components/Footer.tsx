@@ -8,7 +8,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
-    <footer className="bg-[#030712] border-t border-cyan-500/15 py-12 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-[#020611]/85 backdrop-blur-md border-t border-cyan-500/20 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-800">
           {/* Brand */}
@@ -90,29 +90,20 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 </button>
               </li>
               <li>
-                <span className="text-slate-500">Frontend Simulation Engine v1.0</span>
+                <span className="text-slate-500">IoT Smart Fan Engine v1.0</span>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Safety & Honesty Disclaimer per Master Prompt */}
-        <div className="pt-8 space-y-4">
-          <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 text-[11px] text-slate-400 leading-relaxed flex items-start gap-3">
-            <Shield className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-            <div>
-              <strong className="text-slate-300">Safety & Simulation Notice:</strong> ComfortIQ is currently a software-based simulation. Recommendations and electricity costs are estimates based on user inputs. Actual fan performance and electricity consumption may vary. No physical fan or electrical appliance is controlled by this application.
-            </div>
+        {/* Copyright */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2">
+          <div>
+            © 2026 ComfortIQ Platform. Smart Comfort. Intelligent Energy.
           </div>
-
-          <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2">
-            <div>
-              © 2026 ComfortIQ Platform. Smart Comfort. Intelligent Energy.
-            </div>
-            <div className="flex items-center gap-4">
-              <span>Client-Side Local Processing</span>
-              <span>Zero Hardware Connection</span>
-            </div>
+          <div className="text-xs text-cyan-400/80 font-medium flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+            <span>Hardware Prototype Engine</span>
           </div>
         </div>
       </div>

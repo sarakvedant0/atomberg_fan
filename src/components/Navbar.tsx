@@ -26,7 +26,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onNavigate }) => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#050B17]/85 backdrop-blur-xl border-b border-cyan-500/15">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#020611]/80 backdrop-blur-xl border-b border-cyan-500/20 shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Brand Logo matching reference */}
         <button

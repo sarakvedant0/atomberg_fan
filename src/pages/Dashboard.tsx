@@ -239,9 +239,6 @@ export const Dashboard: React.FC<DashboardProps> = ({
               <span className="text-xs uppercase font-bold text-cyan-300 tracking-wider">
                 Recommendation Output
               </span>
-              <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-950/80 border border-cyan-400/50 text-cyan-300">
-                {recommendation.status} Room Status
-              </span>
             </div>
 
             {/* Main Speed Gauge & Recommendation */}
