@@ -1,0 +1,6 @@
+{
+  "name": "ComfortIQ — Smart Fan Comfort & Energy Intelligence",
+  "description": "An intelligent fan comfort and electricity-cost recommendation platform that helps you understand room conditions, personalize fan speed, resolve comfort conflicts, and estimate energy costs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

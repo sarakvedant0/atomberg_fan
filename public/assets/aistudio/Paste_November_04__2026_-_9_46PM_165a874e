@@ -1,0 +1,1019 @@
+# MASTER PROMPT: BUILD COMFORTIQ — SMART FAN COMFORT AND ENERGY INTELLIGENCE PLATFORM
+
+## 1. PROJECT OVERVIEW
+
+Build a complete, modern, responsive and functional web application called **ComfortIQ**.
+
+ComfortIQ is a smart fan comfort and electricity-cost recommendation platform.
+
+It helps users:
+- Understand room conditions using temperature and humidity inputs.
+- Receive personalized fan-speed recommendations.
+- Resolve comfort conflicts between multiple occupants.
+- Calculate fan electricity consumption and estimated electricity costs.
+- Compare estimated energy consumption under different usage conditions.
+- Understand how fan power, operating hours and electricity tariffs affect costs.
+
+This project is initially a frontend-only software simulation. It does not connect to physical fans, sensors, smart meters or mains electricity.
+
+The final result must be a polished, professional, interactive smart-home dashboard with a premium futuristic appearance.
+
+---
+
+# 2. MOST IMPORTANT REQUIREMENT: REFERENCE IMAGE IMPLEMENTATION
+
+I have attached a reference image showing the intended ComfortIQ website design.
+
+**Treat the attached image as the PRIMARY VISUAL DESIGN SPECIFICATION.**
+
+Your task is to recreate its visual appearance as closely as possible while building a complete functional application.
+
+Do not treat the image as loose inspiration.
+
+Do not independently redesign the interface.
+
+Do not simplify the visual composition.
+
+Do not remove any visible design element.
+
+Reproduce the reference image's:
+- Overall composition and layout.
+- Dark navy background.
+- Electric-blue and cyan highlights.
+- ComfortIQ branding.
+- Navigation bar.
+- Hero section.
+- Large 3D ceiling fan.
+- Glowing airflow effects.
+- Floating information panels.
+- Feature cards.
+- Typography and text hierarchy.
+- Borders, shadows and gradients.
+- Spacing, proportions and alignment.
+- Rounded corners and glassmorphism effects.
+
+The reference image is the visual foundation of the entire website.
+
+However, do not use the complete image as a background. Recreate its individual elements using real HTML, CSS, React components, animations and appropriate visual assets.
+
+The website must be a real application, not a static screenshot.
+
+---
+
+# 3. TECHNOLOGY STACK
+
+Use the following technologies:
+
+- React
+- TypeScript
+- Vite
+- Modern CSS or Tailwind CSS
+- Recharts for charts and analytics.
+- Lucide React for icons.
+- Three.js or React Three Fiber for the 3D ceiling fan, if compatible.
+- Framer Motion for smooth UI animations, if useful.
+- Local React state and frontend calculation functions.
+
+Technical restrictions:
+
+- No paid APIs.
+- No mandatory backend.
+- No authentication requirement.
+- No external hardware integration.
+- No unnecessary dependencies.
+- No API keys or paid services.
+- Do not make the project dependent on a subscription service.
+
+All calculations must initially work entirely in the frontend.
+
+Use local storage where appropriate to preserve settings and user preferences between refreshes.
+
+---
+
+# 4. VISUAL DESIGN SYSTEM
+
+Create a consistent futuristic smart-home dashboard aesthetic.
+
+## Color palette
+
+Use:
+- Primary background: dark navy.
+- Secondary background: slightly lighter navy.
+- Accent: electric blue.
+- Secondary accent: cyan.
+- Primary text: white.
+- Secondary text: muted blue-grey.
+- Positive status: subtle green.
+- Warning status: subtle amber.
+- Error status: subtle red.
+
+Use these colors consistently throughout the application.
+
+## Design characteristics
+
+- Premium dark dashboard appearance.
+- Glassmorphism information panels.
+- Subtle cyan glowing borders.
+- Soft blue shadows.
+- Smooth gradients.
+- Rounded cards.
+- Clean typography.
+- Consistent icon sizes.
+- Professional spacing.
+- Clear visual hierarchy.
+- Smooth hover transitions.
+- Subtle animations.
+
+Avoid excessive glow, excessive gradients and distracting animations.
+
+Keep the interface professional and readable.
+
+---
+
+# 5. WEBSITE NAVIGATION
+
+Create a responsive navigation bar.
+
+Include:
+
+- ComfortIQ logo and branding.
+- Home.
+- Dashboard.
+- Features.
+- How It Works.
+- Energy Insights.
+- Settings.
+- Get Started button.
+
+Requirements:
+
+- Navigation links must work.
+- Active section must be visually identifiable.
+- Use smooth scrolling or proper page navigation.
+- Mobile navigation must use a functional menu.
+- Maintain the visual style of the reference image.
+
+Use a clean, consistent layout across all application sections.
+
+---
+
+# 6. HERO SECTION — STRICT REFERENCE IMAGE RECREATION
+
+The hero section must closely match the attached reference image.
+
+## Left side: Branding and introduction
+
+Display:
+
+Small tagline:
+
+"SMART COMFORT. INTELLIGENT ENERGY."
+
+Main heading:
+
+"Smarter Fans. Greater Comfort. Lower Energy Costs."
+
+Brand name:
+
+"ComfortIQ"
+
+Supporting description:
+
+"An intelligent fan comfort and electricity-cost recommendation platform that helps you understand your room conditions, personalize fan speed, resolve comfort conflicts and estimate energy costs."
+
+Include two functional buttons:
+
+1. Start Now
+2. Explore Features
+
+Start Now should navigate to the Smart Comfort Dashboard.
+
+Explore Features should navigate to the features section.
+
+## Right side: 3D ceiling fan
+
+Create a large, realistic 3D ceiling fan.
+
+This must be a genuine 3D animated object if Three.js or React Three Fiber is supported by the project.
+
+Requirements:
+- Realistic ceiling fan with separate blades and central motor.
+- Metallic or premium material appearance.
+- Smooth continuous blade rotation.
+- Electric-blue lighting around the fan motor.
+- Subtle glowing airflow rings.
+- Animated airflow streams beneath the fan.
+- Smooth rotation transitions.
+- Subtle mouse-based parallax, where appropriate.
+- Responsive rendering.
+- Optimized performance.
+- Fallback visual for devices without WebGL support.
+
+The fan must remain visually prominent and occupy approximately the same area as in the reference image.
+
+Do not substitute a flat icon for the 3D fan.
+
+Do not use an unrelated fan photograph as the entire hero section.
+
+## Floating information panels
+
+Recreate all four individual floating information boxes visible in the reference image.
+
+These panels must surround the 3D fan in positions similar to the reference.
+
+### Panel 1: Room Temperature
+
+Include:
+- Thermometer icon.
+- Heading: Room Temperature.
+- Example reading: 29°C.
+- Status: Optimal.
+- Small temperature trend visualization.
+
+### Panel 2: Recommended Fan Speed
+
+Include:
+- Fan icon.
+- Heading: Recommended Fan Speed.
+- Example reading: 60%.
+- Cyan speed indicator bars.
+
+### Panel 3: Fan Speed
+
+Include:
+- Heading: Fan Speed.
+- Circular cyan gauge.
+- Example reading: 650 RPM.
+- Status: Demonstration.
+
+### Panel 4: Electricity Estimate
+
+Include:
+- Lightning icon.
+- Heading: Electricity Estimate.
+- Example consumption: 0.042 kWh.
+- Example cost: ₹3.4/hr.
+- Status: Estimated.
+- Small usage visualization.
+
+IMPORTANT DATA RULE:
+
+The numbers above are illustrative design examples only.
+
+They must never be presented as real sensor measurements, verified electricity bills or actual physical fan RPM.
+
+Clearly identify demonstration values wherever appropriate.
+
+When the user enters actual inputs into the application, the relevant panels should display the corresponding calculated or user-provided values instead.
+
+Do not invent live sensor data.
+
+---
+
+# 7. MAIN APPLICATION DASHBOARD
+
+Create a dedicated Smart Comfort Dashboard.
+
+The dashboard must be accessible through the navigation bar and Start Now button.
+
+Use clean cards, clear labels, helpful descriptions and functional input controls.
+
+## Module 1: SMART COMFORT DASHBOARD
+
+### User inputs
+
+Provide the following controls:
+
+1. Room temperature in °C.
+2. Room humidity in percentage.
+3. Activity:
+   - Study.
+   - Relaxation.
+   - Sleep.
+4. Number of occupants.
+5. User comfort preference.
+
+Comfort preference options may include:
+- Prefer cooler conditions.
+- Balanced comfort.
+- Prefer less airflow.
+
+### Dashboard outputs
+
+Display:
+- Current entered temperature.
+- Current entered humidity.
+- Selected activity.
+- Number of occupants.
+- Recommended fan speed from 1 to 5.
+- Visual fan-speed indicator.
+- Explanation of the recommendation.
+- Recommendation status.
+
+### Recommendation engine
+
+Implement an understandable rule-based recommendation engine.
+
+The recommendation should consider:
+- Temperature.
+- Humidity.
+- Activity.
+- User comfort preference.
+
+Produce a fan-speed recommendation between 1 and 5.
+
+Provide an understandable explanation of why a particular speed was recommended.
+
+Use clear, maintainable TypeScript functions.
+
+Do not pretend that this initial rule-based model is a scientifically validated comfort prediction system.
+
+Display an appropriate explanation:
+
+"ComfortIQ currently uses an initial rule-based recommendation model. Recommendations are estimates and may not reflect every individual's comfort."
+
+### Feedback system
+
+Allow users to submit:
+
+- Too Warm.
+- Too Cold.
+- Comfortable.
+
+Display the selected feedback and update the interface appropriately.
+
+Do not claim that feedback trains a real AI model unless an actual learning system is implemented.
+
+---
+
+# 8. MODULE 2: COMFORT CLASH RESOLUTION
+
+Create a dedicated section called:
+
+"Resolve Comfort Conflicts"
+
+Purpose:
+
+Help two occupants find a mutually acceptable fan-speed setting.
+
+### Inputs
+
+Person A:
+- Preferred fan speed from 1 to 5.
+
+Person B:
+- Preferred fan speed from 1 to 5.
+
+### Calculation
+
+Use the initial compromise formula:
+
+compromise = round((personA + personB) / 2)
+
+### Display
+
+Show:
+- Person A's preference.
+- Person B's preference.
+- Suggested compromise.
+- Visual comparison of both preferences.
+- Suggested shared fan speed.
+
+### User interaction
+
+Provide:
+- Accept Compromise.
+- Adjust Speed.
+- Reset.
+
+Allow both occupants to provide feedback.
+
+Person A feedback:
+- Too Warm.
+- Too Cold.
+- Comfortable.
+
+Person B feedback:
+- Too Warm.
+- Too Cold.
+- Comfortable.
+
+Allow users to adjust the compromise manually within the 1–5 range.
+
+Explain that the average-speed method is a simple starting point and may not fully resolve individual comfort differences.
+
+---
+
+# 9. MODULE 3: FAN ELECTRICITY COST CALCULATOR
+
+Create a separate, fully functional electricity calculator.
+
+Use the title:
+
+"Fan Energy & Cost Calculator"
+
+### Inputs
+
+1. Fan voltage (V).
+2. Fan rated power (W).
+3. Daily operating hours.
+4. Billing period in days.
+5. Electricity tariff (₹ per kWh).
+
+Provide sensible example defaults and explain that users should enter values from their actual fan specification and electricity tariff.
+
+### Formulas
+
+Daily consumption:
+
+dailyUnits = (powerWatts * hoursPerDay) / 1000
+
+Period consumption:
+
+periodUnits = (powerWatts * hoursPerDay * billingDays) / 1000
+
+Estimated period cost:
+
+estimatedCost = periodUnits * tariffPerUnit
+
+Daily estimated cost:
+
+dailyCost = dailyUnits * tariffPerUnit
+
+Yearly projection:
+
+yearlyUnits = dailyUnits * 365
+
+yearlyCost = yearlyUnits * tariffPerUnit
+
+### Display results
+
+Show:
+
+- Daily electricity consumption in kWh.
+- Total electricity consumption in units.
+- Daily estimated electricity cost.
+- Selected-period estimated electricity cost.
+- Yearly projected electricity consumption.
+- Yearly projected electricity cost.
+- Complete input summary.
+
+Use ₹ for currency.
+
+Use clear number formatting.
+
+### Voltage requirement
+
+Voltage must be displayed as a fan specification.
+
+Do not use voltage alone to calculate electricity consumption.
+
+Rated power in watts is the input used for the basic calculation.
+
+If rated power is unavailable, explain:
+
+"Voltage alone is insufficient to calculate electricity consumption. Current and power factor are also needed to estimate real AC power."
+
+Do not silently invent a rated power value.
+
+### Validation
+
+Validate all inputs.
+
+Prevent:
+- Negative values.
+- Zero or invalid rated power.
+- Invalid operating hours.
+- Operating hours greater than 24 per day.
+- Invalid billing periods.
+- Negative electricity tariffs.
+- Empty required fields.
+- NaN and Infinity results.
+
+Show understandable validation messages.
+
+Prevent calculation errors and handle edge cases.
+
+### Important calculation explanation
+
+Explain:
+
+"These estimates assume that the fan continuously operates at its rated power. Actual electricity consumption can vary depending on fan speed, motor type, voltage conditions and operating conditions."
+
+Do not claim that a particular fan-speed setting produces an exact percentage of rated power unless a valid fan-specific model or measurement supports it.
+
+---
+
+# 10. MODULE 4: ENERGY INSIGHTS AND ANALYTICS
+
+Create a dedicated Energy Insights page.
+
+Use Recharts for clean, responsive charts.
+
+The page should help users understand how electricity consumption and cost change under different conditions.
+
+## Chart 1: Daily usage comparison
+
+Compare different daily operating durations.
+
+Example:
+- 2 hours.
+- 4 hours.
+- 6 hours.
+- 8 hours.
+- 10 hours.
+- 12 hours.
+
+Display estimated consumption and cost.
+
+## Chart 2: Rated power comparison
+
+Compare different fan rated-power values.
+
+Use configurable example values such as:
+- 30 W.
+- 40 W.
+- 50 W.
+- 60 W.
+- 75 W.
+
+Make it clear that these are comparison examples, not actual measurements of the user's fan.
+
+## Chart 3: Electricity tariff comparison
+
+Show how estimated electricity costs change with different tariffs.
+
+Use ₹ per kWh.
+
+## Chart 4: Daily, monthly and yearly projections
+
+Show:
+- Daily consumption and cost.
+- Selected billing-period consumption and cost.
+- 30-day estimated consumption and cost.
+- 365-day projected consumption and cost.
+
+Use bar charts, line charts or other appropriate visualizations.
+
+### Analytics requirements
+
+- All charts must use actual frontend calculation functions.
+- Update charts when calculator inputs change.
+- Provide clear axis labels.
+- Display units.
+- Include tooltips.
+- Use consistent styling.
+- Make charts responsive.
+- Distinguish demonstration data from user-entered data.
+
+Do not claim energy savings without a valid comparison or actual measurement.
+
+Explain that rated-power calculations assume constant rated power and actual fan consumption varies with speed and operating conditions.
+
+---
+
+# 11. MODULE 5: SETTINGS
+
+Create a dedicated Settings page.
+
+Allow users to configure:
+
+### Fan settings
+- Fan name.
+- Rated voltage.
+- Rated power.
+- Electricity tariff.
+- Default daily operating hours.
+
+### Comfort settings
+- Preferred comfort level.
+- Default activity.
+- Preferred fan speed.
+- Default temperature preference.
+
+### Requirements
+
+- Allow users to edit settings.
+- Provide Save Settings.
+- Provide Reset to Defaults.
+- Validate all settings.
+- Persist settings using localStorage.
+- Reuse saved settings in the dashboard and electricity calculator.
+
+Do not require user accounts or backend storage.
+
+---
+
+# 12. FEATURES SECTION
+
+Recreate the four feature cards visible in the reference image.
+
+All four must be present.
+
+### Card 1: Room Awareness
+
+Icon: House or thermometer.
+
+Description:
+
+"Understand room temperature, humidity and environmental conditions."
+
+### Card 2: Personalized Fan Recommendations
+
+Icon: Fan.
+
+Description:
+
+"Get understandable fan-speed recommendations based on room conditions and comfort preferences."
+
+### Card 3: Resolve Comfort Conflicts
+
+Icon: Users.
+
+Description:
+
+"Find a practical shared fan-speed compromise between multiple occupants."
+
+### Card 4: Energy & Cost Insights
+
+Icon: Lightning or chart.
+
+Description:
+
+"Estimate electricity usage, compare operating conditions and understand fan running costs."
+
+### Card styling
+
+- Equal card dimensions where possible.
+- Consistent spacing.
+- Dark transparent backgrounds.
+- Rounded corners.
+- Subtle cyan borders.
+- Small glowing icon backgrounds.
+- Consistent typography.
+- Smooth hover animations.
+
+Make the cards interactive. Clicking each card should navigate to its corresponding application module.
+
+---
+
+# 13. HOW IT WORKS SECTION
+
+Create a section explaining the platform in four steps.
+
+1. Enter room conditions.
+2. Receive personalized fan-speed recommendations.
+3. Resolve shared comfort preferences.
+4. Calculate and understand electricity costs.
+
+Use a clean visual step-by-step layout.
+
+Include icons and subtle connecting lines.
+
+---
+
+# 14. 3D FAN AND ANIMATION REQUIREMENTS
+
+The 3D ceiling fan is one of the most important visual elements.
+
+Use Three.js or React Three Fiber if compatible.
+
+Implement:
+
+- Separate 3D blades.
+- Central motor.
+- Realistic materials.
+- Smooth continuous rotation.
+- Adjustable rotation speed.
+- Electric-blue highlights.
+- Animated airflow streams.
+- Subtle glowing rings.
+- Responsive canvas.
+- Performance optimization.
+- Reduced-motion accessibility support.
+- Fallback visual when WebGL is unavailable.
+
+### Functional connection
+
+Where appropriate, the fan animation can reflect the recommended speed from the Smart Comfort Dashboard.
+
+Map the recommendation levels 1–5 to five illustrative animation speeds.
+
+Clearly explain that this only changes the on-screen simulation.
+
+It must not imply that the application is controlling a physical fan.
+
+Do not claim hardware integration.
+
+---
+
+# 15. FUNCTIONALITY REQUIREMENTS
+
+Every visible interactive element must work.
+
+This includes:
+
+- Navigation links.
+- Mobile navigation.
+- Start Now button.
+- Explore Features button.
+- Dashboard inputs.
+- Recommendation calculation.
+- Feedback buttons.
+- Comfort clash calculations.
+- Accept compromise.
+- Manual speed adjustment.
+- Calculator inputs.
+- Calculate results.
+- Chart updates.
+- Settings controls.
+- Save Settings.
+- Reset to Defaults.
+- Feature card navigation.
+
+Avoid decorative buttons that do nothing.
+
+Provide appropriate success, error and validation feedback.
+
+Keep all calculations reusable and separate from UI components.
+
+---
+
+# 16. PROJECT ARCHITECTURE
+
+First inspect my existing project.
+
+Do not immediately overwrite existing files.
+
+Identify:
+- Current framework.
+- Existing dependencies.
+- Existing components.
+- Existing routing.
+- Current styling system.
+- Existing functionality.
+
+Reuse what is already working.
+
+If starting from scratch, create a clean structure similar to:
+
+src/
+  components/
+    Navbar.tsx
+    Hero.tsx
+    Fan3D.tsx
+    InfoPanel.tsx
+    FeatureCard.tsx
+    StatCard.tsx
+    Footer.tsx
+
+  pages/
+    Home.tsx
+    Dashboard.tsx
+    ComfortClash.tsx
+    EnergyCalculator.tsx
+    EnergyInsights.tsx
+    Settings.tsx
+
+  calculations/
+    comfortEngine.ts
+    comfortClash.ts
+    energyCalculator.ts
+
+  hooks/
+    useLocalStorage.ts
+
+  types/
+    index.ts
+
+  data/
+    demoData.ts
+
+  styles/
+    global.css
+    components.css
+
+  App.tsx
+  main.tsx
+
+The exact structure may be adapted to the existing project, but maintain clear separation of responsibilities.
+
+---
+
+# 17. RESPONSIVE DESIGN
+
+The website must work properly on:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile phones.
+
+### Desktop
+
+- Preserve the reference image's visual composition.
+- Keep the 3D fan prominent.
+- Position all four floating information panels around the fan.
+- Maintain the horizontal navigation.
+- Display four feature cards in one row where screen width allows.
+
+### Tablet
+
+- Adjust dimensions and spacing.
+- Maintain the overall design hierarchy.
+- Reposition floating panels where necessary.
+
+### Mobile
+
+- Use a functional mobile navigation menu.
+- Stack hero text and fan appropriately.
+- Keep the fan visible.
+- Reposition all information panels without hiding them.
+- Display feature cards in a responsive grid or vertical layout.
+- Make all inputs usable.
+- Prevent horizontal scrolling.
+- Ensure charts fit the screen.
+
+Do not simply shrink the desktop design until it becomes unreadable.
+
+---
+
+# 18. ACCESSIBILITY AND CODE QUALITY
+
+- Use semantic HTML.
+- Add accessible labels to inputs.
+- Provide keyboard-accessible interactions.
+- Maintain sufficient text contrast.
+- Use descriptive button labels.
+- Handle errors gracefully.
+- Keep TypeScript types accurate.
+- Avoid unnecessary use of any.
+- Avoid duplicated calculation logic.
+- Use reusable components.
+- Keep components manageable.
+- Add comments where calculation logic needs explanation.
+
+---
+
+# 19. IMPORTANT SAFETY AND HONESTY REQUIREMENTS
+
+ComfortIQ is initially a software simulation.
+
+It must NOT:
+
+- Control mains electricity.
+- Switch a real fan on or off.
+- Claim to connect to a physical fan.
+- Claim to receive real sensor readings.
+- Claim to measure actual RPM.
+- Claim to measure actual electricity consumption.
+- Claim to train a real AI model.
+- Claim scientifically validated comfort predictions.
+- Invent energy savings.
+
+Clearly identify:
+- Demonstration data.
+- User-entered values.
+- Calculated estimates.
+- Simulated fan animation.
+
+Add a short disclaimer:
+
+"ComfortIQ is currently a software-based simulation. Recommendations and electricity costs are estimates based on user inputs. Actual fan performance and electricity consumption may vary. No physical fan or electrical appliance is controlled by this application."
+
+---
+
+# 20. FINAL VISUAL QUALITY CHECK
+
+Do not stop after creating a rough website.
+
+Once implementation is complete:
+
+1. Start the application.
+2. Check the browser output.
+3. Capture a desktop screenshot.
+4. Compare it against the attached reference image.
+5. Check the navigation bar.
+6. Check the ComfortIQ logo and hero heading.
+7. Check the 3D fan's size and position.
+8. Check all four floating information panels individually.
+9. Check the four feature cards.
+10. Check typography, spacing, colors, shadows and proportions.
+11. Fix visual differences.
+12. Repeat until the result is as close as reasonably possible to the reference.
+
+Also test every functional module.
+
+Test:
+- Comfort recommendations.
+- Comfort clash calculations.
+- Electricity calculations.
+- Input validation.
+- Chart updates.
+- Settings persistence.
+- Responsive layouts.
+- Navigation.
+- Mobile menu.
+
+Fix errors before declaring the project complete.
+
+---
+
+# 21. FINAL DELIVERABLE
+
+I expect a complete, working ComfortIQ React application.
+
+Deliver:
+
+1. Fully implemented website.
+2. Complete React and TypeScript source code.
+3. Reusable components.
+4. Functional calculation modules.
+5. Working charts.
+6. Functional settings.
+7. Responsive layouts.
+8. 3D animated ceiling fan or a reliable fallback.
+9. Properly implemented reference-image design.
+10. Instructions to install dependencies and run the project locally.
+
+Provide the commands needed to run the application.
+
+For example:
+
+npm install
+
+npm run dev
+
+Also explain which files were created or modified.
+
+---
+
+# 22. EXECUTION INSTRUCTIONS — FOLLOW THIS ORDER
+
+Do not try to implement everything carelessly in one pass.
+
+Follow this sequence:
+
+**PHASE 1 — PROJECT INSPECTION**
+
+Inspect the existing project and identify its structure, dependencies and current functionality.
+
+**PHASE 2 — DESIGN IMPLEMENTATION**
+
+Recreate the attached reference image, including the navigation, hero, 3D fan, floating information boxes and feature cards.
+
+**PHASE 3 — APPLICATION STRUCTURE**
+
+Create the navigation and all five functional modules.
+
+**PHASE 4 — CALCULATION LOGIC**
+
+Implement and test the comfort recommendation engine, compromise formula and electricity calculations.
+
+**PHASE 5 — CHARTS AND SETTINGS**
+
+Implement analytics, charts, validation and localStorage settings.
+
+**PHASE 6 — ANIMATIONS**
+
+Implement the 3D fan, airflow effects and smooth UI animations.
+
+**PHASE 7 — RESPONSIVENESS**
+
+Test desktop, tablet and mobile layouts.
+
+**PHASE 8 — FINAL TESTING**
+
+Run the project, fix errors and compare the browser screenshot against the reference image.
+
+Do not skip any phase.
+
+---
+
+# FINAL STRICT INSTRUCTION
+
+Build ComfortIQ as a complete, professional smart-home software platform.
+
+The attached image defines the intended visual appearance.
+
+The project description defines the actual functionality.
+
+Both requirements are equally important.
+
+**VISUAL REQUIREMENT:** Recreate the reference image as closely as possible. Do not redesign, simplify or omit its visible elements.
+
+**FUNCTIONAL REQUIREMENT:** Implement all five modules with real frontend calculations, working controls, validation, charts and saved settings.
+
+**TECHNICAL REQUIREMENT:** Use clean React and TypeScript architecture. Preserve existing project functionality and avoid unnecessary dependencies.
+
+**HONESTY REQUIREMENT:** Never fake live hardware readings, physical fan control, AI learning or verified electricity savings.
+
+Do not deliver just a landing page.
+
+Do not deliver just a static UI.
+
+Do not deliver a collection of nonfunctional cards.
+
+Deliver the complete ComfortIQ application, with the reference design faithfully implemented and all specified features working.
+
+If any requirement cannot be implemented exactly, explain the limitation rather than silently replacing it with a fake implementation.
